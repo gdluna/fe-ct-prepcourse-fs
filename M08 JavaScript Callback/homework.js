@@ -5,13 +5,15 @@ function mayuscula(nombre) {
    // Debe devolver el mismo nombre, pero con la primera letra en mayúscula.
    // [Ejemplo]: "mario" ----> "Mario".
    // Tu código:
-   var nombreSeparado = nombre.split('');
+   return nombre.charAt(0).toUpperCase()+nombre.slice(1);
+
+  /*  var nombreSeparado = nombre.split('');
    var nuevoNombre = "";
    nombreSeparado[0] = nombreSeparado[0].toUpperCase();
    for (let i = 0; i < nombreSeparado.length; i++) {
       nuevoNombre = nuevoNombre + nombreSeparado[i];
    }
-   return nuevoNombre;
+   return nuevoNombre; */
 }
 
 function invocarCallback(cb) {
